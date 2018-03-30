@@ -1,0 +1,13 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-config-standard"
+  ],
+  "rules": {
+    "no-unused-expression": true,
+    "no-unused-variable": true,
+    "no-unnecessary-qualifier": true
+  },
+  "rulesDirectory": [
+  ]
+}

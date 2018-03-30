@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": [
+         "es5",
+         "es6",
+         "es7",
+         "dom"
+      ],
+    "outDir": "dist",
+    "rootDir": "src",
+    "alwaysStrict": true,
+    "charset": "utf-8",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "strictPropertyInitialization": false
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules"
+  ]
+}
