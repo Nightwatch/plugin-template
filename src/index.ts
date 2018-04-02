@@ -3,11 +3,19 @@ import { CommandoClient } from 'discord.js-commando'
 
 export class Module {
   private static client: CommandoClient
+  private static apiToken: string
 
-  // public static async onMessage (message: Message) {}
+  protected static async onMessage (message: Message) {
+    // If you need stuff to run in the background, use this.
+  }
 
-  public async registerListeners (client: CommandoClient): Promise<void> {
-    // client.on('message', await Module.onMessage)
+  public async init (client: CommandoClient, apiToken: string) {
     Module.client = client
+    Module.apiToken = apiToken
+    await this.registerListeners(client)
+  }
+
+  private async registerListeners (client: CommandoClient): Promise<void> {
+    client.on('message', await Module.onMessage)
   }
 }
