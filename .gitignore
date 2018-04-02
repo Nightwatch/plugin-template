@@ -403,3 +403,6 @@ __pycache__/
 # should be stored in the .pubxml.user file.
 
 # End of https://www.gitignore.io/api/node,grunt,bower,sublimetext,visualstudio,visualstudiocode
+
+# Prevent development files from being read by main bot
+*.json
