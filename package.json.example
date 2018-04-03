@@ -19,7 +19,6 @@
   "homepage": "https://github.com/NatsukiBot/module-template#readme",
   "devDependencies": {
     "@types/node": "^9.6.1",
-    "discord.js-commando": "github:discordjs/Commando#master",
     "eslint": "^4.19.1",
     "standard": "^11.0.1",
     "tslint": "^5.9.1",
@@ -28,6 +27,7 @@
     "typescript": "^2.8.1"
   },
   "dependencies": {
-    "discord.js": "github:discordjs/discord.js#master"
+    "discord.js": "github:discordjs/discord.js#master",
+    "discord.js-commando": "github:discordjs/Commando#master"
   }
 }
