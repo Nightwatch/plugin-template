@@ -19,6 +19,7 @@
   "homepage": "https://github.com/NatsukiBot/module-template#readme",
   "devDependencies": {
     "@types/node": "^9.6.1",
+    "@types/winston": "^2.3.9",
     "eslint": "^4.19.1",
     "standard": "^11.0.1",
     "tslint": "^5.9.1",

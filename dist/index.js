@@ -4,11 +4,20 @@ class Module {
     static async onMessage(message) {
         // If you need stuff to run in the background, use this.
     }
-    async init(client, apiToken) {
+    /**
+     * Initializes module
+     * @param client
+     * @param config
+     */
+    async init(client, config) {
         Module.client = client;
-        Module.apiToken = apiToken;
+        Module.config = config;
         await this.registerListeners(client);
     }
+    /**
+     * Register events
+     * @param client
+     */
     async registerListeners(client) {
         client.on('message', await Module.onMessage);
     }
