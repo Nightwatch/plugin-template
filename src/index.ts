@@ -1,20 +1,30 @@
 import { Message } from 'discord.js'
 import { CommandoClient } from 'discord.js-commando'
+import { Config } from '@natsuki/util'
 
 export class Module {
-  private static client: CommandoClient
-  private static apiToken: string
+  public static client: CommandoClient
+  public static config: Config
 
   protected static async onMessage (message: Message) {
     // If you need stuff to run in the background, use this.
   }
 
-  public async init (client: CommandoClient, apiToken: string) {
+  /**
+   * Initializes module
+   * @param client
+   * @param config
+   */
+  public async init (client: CommandoClient, config: Config) {
     Module.client = client
-    Module.apiToken = apiToken
+    Module.config = config
     await this.registerListeners(client)
   }
 
+  /**
+   * Register events
+   * @param client
+   */
   private async registerListeners (client: CommandoClient): Promise<void> {
     client.on('message', await Module.onMessage)
   }
