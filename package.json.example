@@ -1,6 +1,6 @@
 {
   "name": "@natsuki/module-template",
-  "version": "0.2.1",
+  "version": "0.1.0",
   "description": "A template module for quickly developing a new module for the bot.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,7 +28,9 @@
     "typescript": "^2.8.1"
   },
   "dependencies": {
-    "@natsuki/util": "github:natsukibot/util",
+    "@natsuki/db": "github:NatsukiBot/db",
+    "@natsuki/util": "github:NatsukiBot/util",
+    "axios": "^0.18.0",
     "discord.js": "github:discordjs/discord.js#master",
     "discord.js-commando": "github:discordjs/Commando#master"
   }

@@ -1,10 +1,9 @@
-import { Message } from 'discord.js';
 import { CommandoClient } from 'discord.js-commando';
 import { Config } from '@natsuki/util';
 export declare class Module {
     static client: CommandoClient;
     static config: Config;
-    protected static onMessage(message: Message): Promise<void>;
+    static moduleName: string;
     /**
      * Initializes module
      * @param client
@@ -15,5 +14,5 @@ export declare class Module {
      * Register events
      * @param client
      */
-    private registerListeners(client);
+    private registerListeners(client, config);
 }

@@ -1,14 +1,12 @@
 import { Message } from 'discord.js'
 import { CommandoClient } from 'discord.js-commando'
 import { Config } from '@natsuki/util'
+import { onMessage } from './lib/Events'
 
 export class Module {
   public static client: CommandoClient
   public static config: Config
-
-  protected static async onMessage (message: Message) {
-    // If you need stuff to run in the background, use this.
-  }
+  public static moduleName = 'Module Template'
 
   /**
    * Initializes module
@@ -18,14 +16,14 @@ export class Module {
   public async init (client: CommandoClient, config: Config) {
     Module.client = client
     Module.config = config
-    await this.registerListeners(client)
+    await this.registerListeners(client, config)
   }
 
   /**
    * Register events
    * @param client
    */
-  private async registerListeners (client: CommandoClient): Promise<void> {
-    client.on('message', await Module.onMessage)
+  private async registerListeners (client: CommandoClient, config: Config): Promise<void> {
+    client.on('message', message => onMessage(message, config))
   }
 }
