@@ -5,6 +5,7 @@ export declare class Module {
     static config: Config;
     static id: string;
     static description: string;
+    static commandGroups: never[];
     /**
      * Initializes module
      * @param client

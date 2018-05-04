@@ -8,6 +8,12 @@ export class Module {
   public static config: Config
   public static id = 'Module Template'
   public static description = 'A template module'
+  public static commandGroups = [
+    // If you need to make command groups for the module's commands,
+    // Add them here rather than adding them to the core bot.
+    // Helps keep the modules more independent from the bot.
+    // ex. ['music', 'Music']
+  ]
 
   /**
    * Initializes module

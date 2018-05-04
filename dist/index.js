@@ -22,5 +22,6 @@ class Module {
 }
 Module.id = 'Module Template';
 Module.description = 'A template module';
+Module.commandGroups = [];
 exports.Module = Module;
 //# sourceMappingURL=index.js.map
