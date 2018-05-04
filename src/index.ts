@@ -6,7 +6,8 @@ import { onMessage } from './lib/Events'
 export class Module {
   public static client: CommandoClient
   public static config: Config
-  public static moduleName = 'Module Template'
+  public static id = 'Module Template'
+  public static description = 'A template module'
 
   /**
    * Initializes module

@@ -20,6 +20,7 @@ class Module {
         client.on('message', message => Events_1.onMessage(message, config));
     }
 }
-Module.moduleName = 'Module Template';
+Module.id = 'Module Template';
+Module.description = 'A template module';
 exports.Module = Module;
 //# sourceMappingURL=index.js.map
