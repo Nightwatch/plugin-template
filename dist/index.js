@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Events_1 = require("./lib/Events");
-class Module {
+class Plugin {
     /**
-     * Initializes module
+     * Initializes plugin
      * @param client
      * @param config
      */
     async init(client, config) {
-        Module.client = client;
-        Module.config = config;
+        Plugin.client = client;
+        Plugin.config = config;
         await this.registerListeners(client, config);
     }
     /**
@@ -20,8 +20,13 @@ class Module {
         client.on('message', message => Events_1.onMessage(message, config));
     }
 }
-Module.id = 'Module Template';
-Module.description = 'A template module';
-Module.commandGroups = [];
-exports.Module = Module;
+Plugin.id = 'Plugin Template';
+Plugin.description = 'A template plugin';
+Plugin.commandGroups = [
+// If you need to make command groups for the plugin's commands,
+// Add them here rather than adding them to the core bot.
+// Helps keep the plugins more independent from the bot.
+// ex. ['music', 'Music']
+];
+exports.Plugin = Plugin;
 //# sourceMappingURL=index.js.map
