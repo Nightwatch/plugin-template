@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NightwatchBot/plugin-template.git"
+    "url": "git+https://github.com/Nightwatch/plugin-template.git"
   },
   "author": "Tanner Goins",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/NightwatchBot/plugin-template/issues"
+    "url": "https://github.com/Nightwatch/plugin-template/issues"
   },
-  "homepage": "https://github.com/NightwatchBot/plugin-template#readme",
+  "homepage": "https://github.com/Nightwatch/plugin-template#readme",
   "devDependencies": {
     "@types/node": "^9.6.1",
     "@types/winston": "^2.3.9",
