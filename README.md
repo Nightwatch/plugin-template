@@ -1,3 +1,6 @@
+# DEPRECATED
+I have completely rewritten the bot's architecture; consequently, the previous plugin system is no longer compatible. I will revise and redocument the new plugin system once I am happy with it. 
+
 # Plugin Template
  > Template to quickly create new plugins for the bot.
 
